@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    background-color: #201f31;
+    color: #fff;
+    height: 2000px;
+    line-height: 1.5;
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.text-end button{
+    background-color: pink;
+    color: black;
+    border: none;
+}
+
+.slide-cover-img{
+    width: 100%;
+    height: 85vh;
+    background-color: 201f31;
+    position: relative;
+    overflow: hidden;
+    inset: 0 0 0 0;
+    
+}
+
+.cover-image {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 0%;
+    right: 0%;
+}
+.cover-image img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.cover-image::after {
+    content: '';
+    position: absolute;
+    top: -1%;
+    right: 0%;
+    bottom: -1%;
+    left: -1%;
+    background: radial-gradient(transparent, rgb(32, 31, 49) 70%, rgb(32, 31, 49) 85%, rgb(32, 31, 49) 100%);
+    filter: blur(2px);
+}
+/* 
+.blur-cover-image {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 0%;
+    right: 0%;
+    background: url('/images/cover.png') radial-gradient(transparent, rgb(32, 31, 49) 80%);
+    filter: blur(2px);
+} */
+
+.spotlight{
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: 0%;
+    bottom: 10%;
+}
+
+.spotlight-index{
+    margin-left: 50px;
+    width: calc(100% - 50px);
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.spotlight-index p {
+    color: pink;
+    text-align: start;
+}
+
+.anime-title{
+    margin-left: 50px;
+    width: calc(100% - 50px);
+    height: 100px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.anime-title p{
+    color: #fff;
+    font-size: 36px;
+    letter-spacing: 1px;
+    text-align: start;
+    line-height: 1.3;
+}
+
+.anime-details{
+    margin-left: 50px;
+    width: calc(100% - 50px);
+    height: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.anime-details div{
+    padding: 2px;
+    margin: 0px 10px;
+    align-content: center;
+}
+
+
+.anime-description{
+    margin-left: 50px;
+    width: calc(100% - 50px);
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.hero-action{
+    margin-left: 50px;
+    width: calc(100% - 50px);
+    position: absolute;
+    bottom: 0;
+}
+
+.hero-action a{
+    margin: 0px 5px;
+    border-radius: 20px;
+}
+
+.hero-action a i {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.list{
+    position: relative;
+}
+
+.spotlight-scroller{
+    width: 60px;
+    height: 120px;
+    position: absolute;
+    right: 40px;
+    bottom: 5%;
+}
+
+.next,
+.previous{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.quality{
+    background-color: pink;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+
+
+/* youtube slider */
+
+.slider .list .item{
+    overflow: hidden;
+    display: none;
+    transition: transform 0.5s ease;
+}
+
+.slider .list .item.active{
+    overflow: hidden;
+    display: block;
+    transition: 1s;
+}
