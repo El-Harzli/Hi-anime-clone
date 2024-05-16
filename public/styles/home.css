@@ -40,7 +40,6 @@ header{
     height: 100%;
     top: 0%;
     right: 0%;
-    overflow: hidden;
 
     
 }
@@ -57,7 +56,6 @@ header{
     position: absolute;
     inset : -1% -1% -1% -1%;
     background: radial-gradient(transparent, rgb(32, 31, 49) 70%, rgb(32, 31, 49) 85%, rgb(32, 31, 49) 100%);
-    filter: blur(2px);
     
 }
 
@@ -190,3 +188,143 @@ header{
 
 
 /* Begin Trending */
+.trending{
+    margin: 50px 0px;
+    width: 100%;
+}
+
+
+.trending-wrapper{
+    width: 100%;
+    height: auto;
+}
+
+.trending-title{
+    color: pink;    
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.trending-content{
+    width: 100%;
+    height: 300px;
+    position : relative;
+}
+
+.anime-wrapper{
+    padding: 5px;
+    width: 92%;
+    height: 100%;
+}
+
+.anime-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: calc(10%/5);
+}
+
+.anime-item{
+    width: 15%;
+    height: 100%;
+    position: relative;
+}
+
+.anime-info{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.anime-img{
+    position:absolute;
+    width: 85%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.anime-img a{
+    width:100%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.anime-img a img{
+    object-fit: contain;
+    height: 100%;
+    width:  100%;
+    border-radius: 2px;
+}
+
+
+
+.text-container{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-container{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: .75em;
+    font-weight: 600;
+    
+}
+
+.text-container .number-container{
+    color: pink;
+    font-size: 18px;
+    font-weight: 700;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+}
+
+.anime-navigator{
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    right: 1%;
+    top: 0;
+    bottom: 0;
+    padding: 0px 10px;
+    margin: 0;
+}
+
+.myNextAnime, .myPreviousAnime{
+    width: 100%;
+    height: 50%;
+    font-size: 36px;
+    background-color: rgba(225, 217, 217, 0.167) ;
+    text-align: center ;
+    align-content: center ;
+    border: none;
+    border-radius: 5px ;
+    margin: 4px 0px ;
+    font-size: 20px ;
+    cursor: pointer ;
+    color: #fff ;
+    transition: ease-out 150ms;
+}
+
+
+
+.myNextAnime:hover, .myPreviousAnime:hover{
+    background-color: pink;
+    color: #000;
+}
+
+
+
+  
