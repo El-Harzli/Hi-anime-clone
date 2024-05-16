@@ -22,7 +22,11 @@ app.get("/", (req, res) => {
 
 app.get("/home", (req, res) => {
     res.render("home.ejs");
-})
+});
+
+app.get("/movies", (req, res) => {
+    res.render("movies.ejs");
+});
 
 app.listen(port, (req, res) => {
     console.log(`Listening on port ${port}`);
