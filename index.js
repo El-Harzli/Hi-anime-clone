@@ -25,7 +25,7 @@ app.get("/home", (req, res) => {
 });
 
 app.get("/movies", (req, res) => {
-    res.render("movies.ejs");
+    res.send("movies");
 });
 
 app.listen(port, (req, res) => {

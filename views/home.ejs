@@ -6,20 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Poppins Font  -->
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
+  <!-- BootStrap Css  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <!-- Swiper Css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Styles CSS -->
   <link rel="stylesheet" href="/styles/home.css" />
 
   <title>MyHomePage</title>
+
+  <!-- Demo styles -->
+
 </head>
 
 <body>
@@ -32,7 +39,7 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ms-2">
-          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="/home" class="nav-link px-2 text-secondary">Home</a></li>
           <li><a href="/movies" class="nav-link px-2 text-white">Movies</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Tv Series</a></li>
           <li>
@@ -57,9 +64,11 @@
 
   <!-- Begin Slider -->
   <section class="hero">
+
     <div class="swiper-container">
-      <div class="swiper">
+      <div id="swiper1" class="swiper">
         <div class="swiper-wrapper">
+
           <div class="swiper-slide">
             <div class="slide-cover-img">
 
@@ -113,7 +122,7 @@
 
             </div>
           </div>
-          
+
           <div class="swiper-slide">
             <div class="slide-cover-img">
               <div class="cover-image">
@@ -238,132 +247,152 @@
 
   <!-- Begin Trending -->
   <section class="trending">
-    <div class="container-fluid">
-      <div class="trending-wrapper">
-
-        <div class="trending-title">
-          <p>Trending</p>
-        </div>
-
-        
-        <div class="trending-content">
-          <div class="anime-wrapper">
-            <div class="anime-container">
-              <div class="anime-item">
-                <div class="anime-info">
-                  <div class="text-container">
-                    <div class="title-container">Lorem, ipsum.</div>
-                     <div class="number-container">01</div>
-                  </div>
-                  
-
-                </div>
-                <div class="anime-img">
-                  <a href="#"><img src="/images/trend0.png" alt="trend1"></a>
-                </div>
-              </div>
-              <div class="anime-item">
-                <div class="anime-info">
-                  <div class="text-container">
-                    <div class="title-container">Lorem, ipsum.</div>
-                     <div class="number-container">02</div>
-                  </div>
-                  
-
-                </div>
-                <div class="anime-img">
-                  <a href="#"><img src="/images/trend1.png" alt="trend1"></a>
-                </div>
-              </div>
-              <div class="anime-item">
-                <div class="anime-info">
-                  <div class="text-container">
-                    <div class="title-container">Lorem, ipsum.</div>
-                     <div class="number-container">03</div>
-                  </div>
-                  
-
-                </div>
-                <div class="anime-img">
-                  <a href="#"><img src="/images/trend2.png" alt="trend1"></a>
-                </div>
-              </div>
-              <div class="anime-item">
-                <div class="anime-info">
-                  <div class="text-container">
-                    <div class="title-container">Lorem, ipsum.</div>
-                     <div class="number-container">04</div>
-                  </div>
-                  
-
-                </div>
-                <div class="anime-img">
-                  <a href="#"><img src="/images/trend3.png" alt="trend1"></a>
-                </div>
-              </div>
-              <div class="anime-item">
-                <div class="anime-info">
-                  <div class="text-container">
-                    <div class="title-container">Lorem, ipsum.</div>
-                     <div class="number-container">05</div>
-                  </div>
-                  
-
-                </div>
-                <div class="anime-img">
-                  <a href="#"><img src="/images/trend4.png" alt="trend1"></a>
-                </div>
-              </div>
-              <div class="anime-item">
-                <div class="anime-info">
-                  <div class="text-container">
-                    <div class="title-container">Lorem, ipsum.</div>
-                     <div class="number-container">06</div>
-                  </div>
-                  
-
-                </div>
-                <div class="anime-img">
-                  <a href="#"><img src="/images/trend1.png" alt="trend1"></a>
-                </div>
-              </div>
-              <div class="anime-item">
-                <div class="anime-info">
-                  <div class="text-container">
-                    <div class="title-container">Lorem, ipsum.</div>
-                     <div class="number-container">01</div>
-                  </div>
-                  
-
-                </div>
-                <div class="anime-img">
-                  <a href="#"><img src="/images/trend1.png" alt="trend1"></a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="anime-navigator">
-            <div id="nextAnime" class="myNextAnime">
-              <i class="fas fa-angle-right ml-2"></i>
-            </div>
-            <div id="previousAnime" class="myPreviousAnime">
-              <i class="fas fa-angle-left ml-2"></i>
-            </div>
-          </div>
-        </div>
-
+    <div class="trending-container">
+      <div class="trending-header">
+        <p class="trending-title">Trending</p>
       </div>
-    </div>
+      <div class="trending-body">
+        <div class="anime-container swiper">
+          <div class="anime-content">
+            <div class="swiper-wrapper">
+              <div class="anime-item swiper-slide">
+                <div class="anime-info">
+                  <div class="text-container">
+                    <div class="title-container">Lorem, ipsum.</div>
+                    <div class="number-container">01</div>
+                  </div>
 
+                  <div class="anime-img">
+                    <a href="#" class="anime-anchor">
+                      <img src="/images/trend0.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="anime-item swiper-slide">
+                <div class="anime-info">
+                  <div class="text-container">
+                    <div class="title-container">Lorem, ipsum.</div>
+                    <div class="number-container">02</div>
+                  </div>
+
+                  <div class="anime-img">
+                    <a href="#" class="anime-anchor">
+                      <img src="/images/trend1.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="anime-item swiper-slide">
+                <div class="anime-info">
+                  <div class="text-container">
+                    <div class="title-container">Lorem, ipsum.</div>
+                    <div class="number-container">03</div>
+                  </div>
+
+                  <div class="anime-img">
+                    <a href="#" class="anime-anchor">
+                      <img src="/images/trend2.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="anime-item swiper-slide">
+                <div class="anime-info">
+                  <div class="text-container">
+                    <div class="title-container">Lorem, ipsum.</div>
+                    <div class="number-container">04</div>
+                  </div>
+
+                  <div class="anime-img">
+                    <a href="#" class="anime-anchor">
+                      <img src="/images/trend3.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="anime-item swiper-slide">
+                <div class="anime-info">
+                  <div class="text-container">
+                    <div class="title-container">Lorem, ipsum.</div>
+                    <div class="number-container">05</div>
+                  </div>
+
+                  <div class="anime-img">
+                    <a href="#" class="anime-anchor">
+                      <img src="/images/trend4.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="anime-item swiper-slide">
+                <div class="anime-info">
+                  <div class="text-container">
+                    <div class="title-container">Lorem, ipsum.</div>
+                    <div class="number-container">01</div>
+                  </div>
+
+                  <div class="anime-img">
+                    <a href="#" class="anime-anchor">
+                      <img src="/images/trend0.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="anime-item swiper-slide">
+                <div class="anime-info">
+                  <div class="text-container">
+                    <div class="title-container">Lorem, ipsum.</div>
+                    <div class="number-container">01</div>
+                  </div>
+
+                  <div class="anime-img">
+                    <a href="#" class="anime-anchor">
+                      <img src="/images/trend0.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="anime-item swiper-slide">
+                <div class="anime-info">
+                  <div class="text-container">
+                    <div class="title-container">Lorem, ipsum.</div>
+                    <div class="number-container">01</div>
+                  </div>
+
+                  <div class="anime-img">
+                    <a href="#" class="anime-anchor">
+                      <img src="/images/trend0.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="trending-navigator">
+              <div  class="next">
+                <i class="fas fa-angle-right ml-2"></i>
+              </div>
+              <div class="previous">
+                <i class="fas fa-angle-left ml-2"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
-
   <!-- End Trending -->
 
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="/scripts/home.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+
+  </script>
 </body>
 
 </html>
